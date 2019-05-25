@@ -1,0 +1,18 @@
+{
+    "name": "koolreport/twig",
+    "version":"1.0.0",
+    "description": "Allow KoolReport to use twig template engine to render view",
+    "keywords": ["PHP","Reporting Tools","Data Report","twig","template engine"],
+    "homepage": "https://www.koolreport.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KoolPHP Inc",
+            "homepage": "https://www.koolphp.net"
+        }
+    ],
+    "require": {
+        "twig/twig":"^2.0"
+    }
+}
