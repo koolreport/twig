@@ -13,8 +13,9 @@ class Widget extends AbstractExtension
         ];
     }
 
-    public function loadWidget($name,$params,$report)
+    public function loadWidget($name,$params)
     {
-        return \koolreport\core\Utility::getClassName($report);//$name::create($params);
+        $name = str_replace(".", '\\', $name);
+        return $name::create($params);
     }
 }
