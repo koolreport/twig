@@ -64,7 +64,23 @@ __Congrat__, Now you can use Twig to design your report.
 
 ## Limitation
 
-There are some limitation due to the fact that Twig does not allow PHP to run within. This limits some of capability of KoolReport's widget such as defining anonymous function.
+There are some limitation due to the fact that `Twig` does not allow PHP to run within. This limits some of capability of KoolReport's widget such as defining anonymous function. For example, there is no way to define custom function to format value in Table widget like this.
+
+```
+Table::create(array(
+    ...
+    "columns"=>array(
+        "id"=>array(
+            "formatValue"=>function($value)
+            {
+                return "<a href='$value'>View</a>";
+            }
+        )
+    )
+))
+```
+
+Simply it is not able to transform above php code to json definition in twig.
 
 ## Support
 
