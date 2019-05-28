@@ -50,7 +50,7 @@ __Step 3:__ You can run your report with following line of code
 
 ```
 $report = new Report;
-#report->run()->render("report.html");
+$report->run()->render("report.html");
 ```
 
 __Congrat__, Now you can use Twig to design your report.
