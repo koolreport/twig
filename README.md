@@ -1,14 +1,30 @@
-# KoolReport Twig 
+# Twig
 
-Allow KoolReport to use Twig template. 
+## Overview
+
+Starting from version 4.0.0, KoolReport supports other template engines rather than just its own template view file. `Twig` is one of the popular template engines that KoolReport supports.
 
 ## Installation
+
+#### By downloading .zip file
+
+1. [Download](https://www.koolreport.com/packages/twig)
+2. Unzip the zip file
+3. Copy the folder `twig` into `koolreport` folder so that look like below
+
+```bash
+koolreport
+├── core
+├── twig
+```
+
+#### By composer
 
 ```
 composer require koolreport\twig
 ```
 
-## Guide
+## Get started
 
 __Step 1:__ Add the twig service to your report
 
@@ -82,7 +98,12 @@ Table::create(array(
 
 Simply it is not able to transform above php code to json definition in twig.
 
-## Support
+# Resources
+
+1. [Full documentation](https://www.koolreport.com/docs/twig/overview/)
+2. [Examples & Demonstration](https://www.koolreport.com/examples)
+
+
+# Support
 
 Please use [our forum](https://www.koolreport.com/forum/topics) if you need support, by this way other people can benefit as well. If the support request need privacy, you may send email to us at [support@koolreport.com](mailto:support@koolreport.com).
-
