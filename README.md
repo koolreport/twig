@@ -21,7 +21,7 @@ koolreport
 #### By composer
 
 ```
-composer require koolreport\twig
+composer require koolreport/twig
 ```
 
 ## Get started
